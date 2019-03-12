@@ -1,7 +1,5 @@
-$(document).ready(function() {
-  var originalVersion = 1;
-
-  $('#stylesheet_switcher').click(function (){
+var originalVersion = 1;
+function switchVersion() {
     console.log('switch');
     if (originalVersion) {
      $('link[href="piano.css"]').attr('href','piano-large.css');
@@ -9,10 +7,7 @@ $(document).ready(function() {
      $('link[href="piano-large.css"]').attr('href','piano.css');
    }
    originalVersion = !originalVersion;
-  });
-});
-
-
+}
 
 var synth = new Tone.Synth().toMaster();
 
