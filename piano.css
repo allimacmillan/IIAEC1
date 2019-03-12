@@ -1,10 +1,11 @@
 html {background-color: #394c69;}
 h1 {font-size: 50px; color: white; background-color: #394c69;}
 
+#stylesheet_switcher::before {content: 'Switch to low vision version';}
+#stylesheet_switcher {float: right;}
 #piano {transform: translate(25%);}
 #white_keys {position: absolute; z-index: 1; display: inline-block;}
 #black_keys {position: absolute; z-index: 2; display: inline-block;}
-.white_key {background-color: white; color: black;}
 .black_key {background-color: black; color: white;}
 
 /* Desktop */

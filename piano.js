@@ -1,3 +1,19 @@
+$(document).ready(function() {
+  var originalVersion = 1;
+
+  $('#stylesheet_switcher').click(function (){
+    console.log('switch');
+    if (originalVersion) {
+     $('link[href="piano.css"]').attr('href','piano-large.css');
+   } else {
+     $('link[href="piano-large.css"]').attr('href','piano.css');
+   }
+   originalVersion = !originalVersion;
+  });
+});
+
+
+
 var synth = new Tone.Synth().toMaster();
 
 function cTone() {

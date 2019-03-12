@@ -1,0 +1,31 @@
+html {background-color: #394c69;}
+h1 {color: white; background-color: #394c69;}
+
+#stylesheet_switcher::before {content: 'Switch to original version';}
+#stylesheet_switcher {float: right; width: 20%; height: 20%; font-size: 25px; background-color: black; color: white;}
+#white_keys {position: absolute; z-index: 1; display: inline-block;}
+#black_keys {position: absolute; z-index: 2; display: inline-block;}
+.black_key {background-color: black; color: white;}
+
+/* Desktop */
+@media screen and (min-width: 1242px) {
+  h1 {font-size: 200px;}
+  #piano {margin-top: -140px;}
+  #Ds {margin-right: 180px;}
+  #black_keys {margin-left: 90px;}
+  #small {display: none;}
+  .white_key {background-color: #074c1a; color: white;}
+  .white_key {width: 140px; height: 420px; font-size: 1000%; padding-top: 200px;}
+  .black_key {width: 100px; height: 220px; margin-right: 45px; font-size: 450%;}
+
+}
+
+/* Smart Phone (iPhone 8 plus) */
+@media screen and (max-width: 1242px) {
+  h1 {font-size: 100px;}
+  #Ds {margin-right: 110px;}
+  #black_keys {margin-left: 60px;}
+  #large {display: none;}
+  .white_key {width: 80px; height: 160px; background-color: #5e5c2a; color: white; font-size: 500%; padding-top: 50px;}
+  .black_key {width: 50px; height: 70px; margin-right: 30px; font-size: 200%;}
+}
