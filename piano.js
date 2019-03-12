@@ -1,10 +1,12 @@
 var originalVersion = 1;
 function switchVersion() {
-    console.log('switch');
+    console.log('switching');
     if (originalVersion) {
-     $('link[href="piano.css"]').attr('href','piano-large.css');
+     // $('link[href="piano.css"]').attr('href','piano-large.css');
+     document.getElementById("currentStyle").setAttribute("href", 'piano-large.css');
    } else {
-     $('link[href="piano-large.css"]').attr('href','piano.css');
+     // $('link[href="piano-large.css"]').attr('href','piano.css');
+     document.getElementById("currentStyle").setAttribute("href", 'piano.css');
    }
    originalVersion = !originalVersion;
 }
